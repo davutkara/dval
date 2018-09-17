@@ -29,11 +29,11 @@ Object structure is like above, but when you get the object as a json, and there
 
 **Problem:** You want to get `user.adress.country_code`, but country_code is undefined, but execution is not failed.
 
-**Problem 2:** You want to get `user.adress.country_code` but address is undfined, so you get uncaught type error like this
+**Problem 2:** You want to get `user.adress.country_code` but address is undefined, so you get uncaught type error like this
 `Uncaught TypeError: Cannot read property country_code of undfined`
 then execution is failed. 
 
-So I write a basic function, if there is a undfined or null property return the default value
+So I write a basic function, if there is a undefined or null property return the default value
 
 ```
 _dval('+90',user,'address','country_code');
@@ -45,6 +45,6 @@ Actually, you can make same thing like this without a function.
 user.address.country_code === undefined || user.adress.country_code === null ? '+90' : user.address.country_code
 // Returns +90
 ```
-It is solution for problem 1, but not problme 2. Because if adress is undefined, same uncaught typeerror.
+It is solution for problem 1, but not problem 2 . Because if adress is undefined, same uncaught typeerror.
 
 So the funciton is controll from top to sub properties and it is more readable.
