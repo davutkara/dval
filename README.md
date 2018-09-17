@@ -47,4 +47,4 @@ user.address.country_code === undefined || user.adress.country_code === null ? '
 ```
 It is solution for problem 1, but not problem 2 . Because if adress is undefined, same uncaught typeerror.
 
-So the funciton is controll from top to sub properties and it is more readable.
+So the function is controll from top to sub properties and it is more readable.
