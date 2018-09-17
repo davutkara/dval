@@ -15,7 +15,7 @@ Other arguments are properties.
 # Examples #
 
 You have an object like this.
-```
+```javascript
 var user = {
     name: 'Davut',
     phone: '123456789',
@@ -25,7 +25,7 @@ var user = {
     }
 }
 ```
-Object structure is like above, but when you get the object as a json, and there is no `address.country_code` in json object.
+Object structure is like above, but when you get the object as a javascripton, and there is no `address.country_code` in javascripton object.
 
 **Problem:** You want to get `user.adress.country_code`, but country_code is undefined, but execution is not failed.
 
@@ -35,13 +35,13 @@ then execution is failed.
 
 So I write a basic function, if there is a undefined or null property return the default value
 
-```
+```javascript
 _dval('+90',user,'address','country_code');
 // Returns +90 if it is null or undefined.
 ```
 
 Actually, you can make same thing like this without a function.
-```
+```javascript
 user.address.country_code === undefined || user.adress.country_code === null ? '+90' : user.address.country_code
 // Returns +90
 ```
