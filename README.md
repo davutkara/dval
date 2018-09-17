@@ -7,7 +7,9 @@ Undefined and null erros are common in javascript. This function controls the pr
 # Usage #
 
 First argument is default value, it can be object,string,function or what you want.
+
 Second argument is the object. 
+
 Other arguments are properties.
 
 # Examples #
