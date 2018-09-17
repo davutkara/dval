@@ -25,10 +25,11 @@ var user = {
     }
 }
 ```
-Object structure is like above, but when you get the object as a json, and there is no address.country_code in json object.
+Object structure is like above, but when you get the object as a json, and there is no `address.country_code` in json object.
 
-Problem: You want to get user.adress.country_code, but country_code is undefined, but execution is not failed.
-Problem 2: You want to get user.adress.country_code but address is undfined, so you get uncaught type error like this
+**Problem:** You want to get `user.adress.country_code`, but country_code is undefined, but execution is not failed.
+
+**Problem 2:** You want to get `user.adress.country_code` but address is undfined, so you get uncaught type error like this
 `Uncaught TypeError: Cannot read property country_code of undfined`
 then execution is failed. 
 
