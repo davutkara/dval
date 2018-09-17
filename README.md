@@ -25,7 +25,7 @@ var user = {
     }
 }
 ```
-Object structure is like above, but when you get the object as a javascripton, and there is no `address.country_code` in javascripton object.
+Object structure is like above, but when you get the object as a json, and there is no `address.country_code` in json object.
 
 **Problem:** You want to get `user.adress.country_code`, but country_code is undefined, but execution is not failed.
 
